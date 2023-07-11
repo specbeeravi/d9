@@ -1,0 +1,12 @@
+diff --git a/css/custom-style.css b/css/custom-style.css
+index a96f417..54acfe7 100644
+--- a/css/custom-style.css
++++ b/css/custom-style.css
+@@ -366,7 +366,6 @@ nav h2{
+   display: none;
+   background: #fff;
+   width: 100%;
+-  margin-top: 20px;
+ }
+ 
+ .menu-base-theme a{

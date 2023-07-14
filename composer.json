@@ -18,10 +18,14 @@
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "~1.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/bootstrap": "^3.29",
+        "drupal/bootstrap4": "^3.0",
         "drupal/business_responsive_theme": "^2.0",
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
+        "drupal/rate": "^3.0",
+        "drupal/votingapi": "^3.0@beta",
         "drush/drush": "^11.6"
     },
     "conflict": {

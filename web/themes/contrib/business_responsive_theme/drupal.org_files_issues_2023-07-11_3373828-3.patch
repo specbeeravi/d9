@@ -1,0 +1,22 @@
+diff --git a/includes/flexslider/css/flexslider.css b/includes/flexslider/css/flexslider.css
+index c459ef4..2d78cc9 100755
+--- a/includes/flexslider/css/flexslider.css
++++ b/includes/flexslider/css/flexslider.css
+@@ -92,6 +92,8 @@ html[xmlns] .flexslider .slides {
+ .flexslider .slides img {
+   height: auto;
+   -moz-user-select: none;
++  height: 490px;
++  object-fit: cover;
+ }
+ .flex-viewport {
+   max-height: 2000px;
+@@ -273,3 +275,8 @@ html[xmlns] .flexslider .slides {
+     right: 10px;
+   }
+ }
++@media screen and (max-width: 767px) {
++  .flexslider .slides img {
++    height: 155px;
++  }
++}

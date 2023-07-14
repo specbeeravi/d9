@@ -234,9 +234,6 @@ function business_responsive_theme_form_system_theme_settings_alter(&$form, \Dru
     '#default_value' => theme_get_setting('rss_url'),
   ];
 
-  // Custom submit to save the file permanent.
-  $form['#submit'][] = 'business_responsive_theme_settings_form_submit';
-
   //Copyright
   $form['business_responsive_theme_settings']['copyright'] = [
     '#type' => 'details',
@@ -263,7 +260,6 @@ function business_responsive_theme_form_system_theme_settings_alter(&$form, \Dru
     '#default_value' => theme_get_setting('show_credit_link'),
     '#description'   => t("Recommend you to display credit in footer"),
   ];
-
 
   //Slide show configure 
   $form['business_responsive_theme_settings']['slideshow'] = [

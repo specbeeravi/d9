@@ -26,6 +26,7 @@
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
         "drupal/rate": "^3.0",
+        "drupal/save_edit": "^1.4",
         "drupal/votingapi": "^3.0@beta",
         "drush/drush": "^11.6"
     },

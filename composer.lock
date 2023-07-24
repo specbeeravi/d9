@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "686515090c311dba3a86ff285ae3769a",
+    "content-hash": "b90de7421be6b957486746acc39772f8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2086,6 +2086,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/votingapi",
                 "issues": "https://drupal.org/project/issues/votingapi"
+            }
+        },
+        {
+            "name": "drupal/yg_corp",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/yg_corp.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/yg_corp-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "dc74fc99e355619d789b122daef9bb6f3533fb71"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1598264829",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Karthikeyan R",
+                    "homepage": "https://www.drupal.org/user/3306805"
+                },
+                {
+                    "name": "Pravin Ajaaz",
+                    "homepage": "https://www.drupal.org/user/2910049"
+                }
+            ],
+            "description": "YG Corp is a theme template perfect for corporate related websites",
+            "homepage": "https://www.drupal.org/project/yg_corp",
+            "support": {
+                "source": "https://git.drupalcode.org/project/yg_corp"
             }
         },
         {

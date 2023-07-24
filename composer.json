@@ -28,6 +28,7 @@
         "drupal/rate": "^3.0",
         "drupal/save_edit": "^1.4",
         "drupal/votingapi": "^3.0@beta",
+        "drupal/yg_corp": "^2.0",
         "drush/drush": "^11.6"
     },
     "conflict": {

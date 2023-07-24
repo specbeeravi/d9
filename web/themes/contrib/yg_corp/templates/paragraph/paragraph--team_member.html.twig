@@ -1,0 +1,25 @@
+<div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team">
+                        <img src="{{file_url(content.field_image['#items'].entity.uri.value)}}" class="img-fluid" alt="team" title="team">
+                        <div class="hover-content text-center">
+                            <h5>{{content.field_header.0}}</h5>
+                            <span>{{content.field_position.0}}</span>
+                            <p>{{content.field_subtitle.0}}</p>
+                            <div class="team-social">
+                               {% if content.field_facebook|render|trim is not empty %}
+                                <a href="{{content.field_facebook.0}}"><i class="fa fa-facebook"></i></a>
+                                 {% endif %}
+                                {% if content.field_twitter|render|trim is not empty %}
+                                <a href="{{content.field_twitter.0}}"><i class="fa fa-twitter"></i></a>
+                                 {% endif %}
+                               {% if content.field_instagram|render|trim is not empty %}
+                                <a href="{{content.field_instagram.0}}"><i class="fa fa-instagram"></i></a>
+                                 {% endif %}
+                               {% if content.field_youtube|render|trim is not empty %}
+                                <a href="{{content.field_youtube.0}}"><i class="fa fa-youtube"></i></a>
+                                 {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               

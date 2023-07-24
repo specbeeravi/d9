@@ -1,0 +1,18 @@
+<!--#Our Testimonial Area start-->
+ <!-- testimonial -->
+    <section id="testimonial" class="service-testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-md-9 mx-auto text-center">
+            
+                    <div class="col-md-12 title-section wow fadeInUp" data-wow-delay="0.3s""><h2 class="title">What Clients Says?</h2></div>    
+                    <div class="testimonial-carousel wow fadeInDown" data-wow-delay="0.6s">
+					    {% for row in rows %}
+							{{ row.content }}
+						{% endfor %} 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	    

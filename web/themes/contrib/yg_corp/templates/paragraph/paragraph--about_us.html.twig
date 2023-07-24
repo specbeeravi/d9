@@ -1,0 +1,26 @@
+<!-- About-us -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-lg-9 mx-auto text-center title-section wow fadeInUp" data-wow-delay="0.3s">
+    				<h2 class="title">{{content.field_header.0}}</h2>
+    				<p>{{content.field_subtitle.0}}</p>
+    			</div> 
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-lg-5 wow fadeInLeft" data-wow-delay="0.4s">
+					<img src="{{file_url(content.field_image['#items'].entity.uri.value)}}" class="img-fluid" alt="about-us image" title="about-us image">
+					{{ content.field_overlay.0 }}
+				</div>
+				 <div class="col-lg-1">
+                    <div class="about-line d-none d-lg-block"></div>
+                </div>
+                <div class=" col-md-12 col-lg-6 wow fadeInRight" data-wow-delay="0.7s">
+                    <h3>{{content.field_subheader.0}}</h3>
+                    <p>{{content.field_description.0}}</p>
+                    <div class="about-btn"><a href="{{content.field_button.0['#url'] }}" class="hover-effect custom-btn ">{{content.field_button.0['#title'] }}</a></div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<!-- about part end -->

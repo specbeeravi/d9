@@ -1,0 +1,227 @@
+.navbar{
+	position: absolute !important;
+	z-index: 100 ;
+}
+.navbar-brand{
+	font-size: 30px !important;
+}
+.toolbar-horizontal .navbar{
+	top: 110px;
+}
+.navbar-nav.ml-auto{
+	padding-left: 460px;
+}
+nav.sticky{
+	position: fixed !important;
+	z-index: 100;
+}
+.toolbar-horizontal nav.sticky{
+	top: 77px;
+}
+.slider-inner h1 .word3{
+	color: #1879da;
+}
+.region-footer-col-1 h2,
+.region-footer-col-2 h2{
+	color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.region-footer-col-1 h2:after,
+.region-footer-col-2 h2:after{
+	position: absolute;
+    content: "";
+    left: 0px;
+    top: 30px;
+    width: 60px;
+    height: 2px;
+    background-color: #1879da;
+}
+.region-footer-col-1 ul.menu,
+.region-footer-col-2 ul.menu{
+	margin-left: 0em;
+}
+#blog .col-lg-4.col-md-6{
+    float: left;
+}
+.img-fluid.two-grid{
+	width: 100%;
+}
+.blog-details .blog-box .blog-caption li a{
+	position: inherit;
+	color: #6f6d6e;
+}
+
+
+
+.pager__item.is-active a , .pager__item.is-active a:hover, .pager li a:hover{
+   font-weight: bold;
+   background: #1679db !important;
+   color: #fff !important;
+}
+
+.pager__item a{
+    height: 45px;
+   line-height: 45px;
+   display: block;
+   border: 1px solid #296dc1;
+   text-align: center;
+   margin-left: -1px;
+   color: #333 !important;
+   font-size: 18px
+}
+
+.pager li a{
+   display: inline-block;
+   padding: 0px 14px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 0px;
+}
+    
+.pager__item {
+   display: inline;
+   padding: 0em;
+}
+.field--name-field-contact-form .btn-primary{
+	width: 33%;
+	padding:14px 29px;
+}
+.field--name-field-contact-form .btn-primary:hover{
+    background: #f256c8 !important;
+}
+.user-register-form.user-form,.user-pass{
+	padding: 5%;
+}
+
+.sewl-comments-meta a{
+	font-size: 18px;
+	margin-left: 0px;
+	color: #000 !important;
+    text-transform: capitalize;
+}
+.comment-area ul.links li a{
+	color: #000 !important;
+}
+.sewl-comments-meta h4 span{
+	margin-left: 0px;
+}
+.comment-main section{
+	padding: 0px;
+}
+.comment-main h3{
+	padding-bottom: 20px;
+}
+.comment-comment-form{
+	padding: 3%;
+}
+.comment-comment-form input.js-form-submit,
+.user-login-form input.js-form-submit,
+.user-register-form input.js-form-submit,
+.user-pass input.js-form-submit,.comment-comment-delete-form input.js-form-submit{
+   padding: 14px 28px;
+    width: 25%;
+    background: #000000;
+    float: left;
+    color: #fff !important;
+    font-size:18px;
+    font-weight: bold;
+    border-radius:5px;
+    text-decoration: none !important;
+    display: inline-block;
+    border: 0;
+    color: #222222;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+ 
+}
+#page-not-found h1{
+	font-size: 120px;
+}
+#page-not-found h2{
+	font-size: 50px;
+}
+.page-not-found-text a{
+	color: #fff !important;
+    background: #000000;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+#conatct form input.custom-btn{
+	background: #1879da;
+    color: #ffffff;
+    padding: 10px 35px 12px 30px;
+    margin: 0 10px;
+    font-weight: 700;
+    margin: 30px 15px;
+    font-size: 16px;
+    transition: 0.6s ease-in-out;
+}
+#block-footer-2 ul.menu a.is-active ,
+#block-useraccountmenu ul.menu a.is-active{
+    color: #f4f8dd;
+}
+.footer-top a:hover{
+	text-decoration: none;
+}
+form#comment-form input {
+    width: 100%;
+    
+}
+form#comment-form{
+	padding: 30px;
+}
+form#comment-form input.button {
+    background: #1879da;
+    color: #ffffff;
+    padding: 10px 35px 12px 30px;
+    margin: 0 10px;
+    font-weight: 700;
+    margin: 30px 15px;
+    font-size: 16px;
+    transition: 0.6s ease-in-out;
+    width: 14%;
+}
+.comment-row h3{
+	margin-bottom: 0px;
+}
+.path-not-frontpage #about img{
+	height: 415px;
+}
+.path-not-frontpage #about .col-md-12.col-lg-5{
+	padding: 0px;
+}
+.toolbar-horizontal .blog-details .comment-item img{
+	left: -90px;
+}
+#user-login .container{
+	width: 45%;
+    box-shadow: 1px 2px 3px 1px;
+    padding: 18px;
+    height: auto;
+    margin-bottom: 30px;
+}
+#blog .col-lg-6.col-md-6{
+	float: left;
+}
+#blog a:hover{
+	text-decoration: none;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+
+.navbar-nav.ml-auto{
+	padding-left: 0px;
+}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+
+.navbar-nav.ml-auto{
+	padding-left: 310px;
+}
+}

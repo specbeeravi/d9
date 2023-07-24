@@ -1,0 +1,129 @@
+<?php
+function yg_corp_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+  $form['header_settings']['header'] = array(
+   '#type' => 'details',
+   '#title' => t('Header Settings'),
+   '#collapsible' => TRUE,
+   '#collapsed' => FALSE,
+ );
+  $form['header_settings']['header']['header_lite']= array(
+   '#type' => 'checkbox',
+   '#title' => t("select white header"),
+   '#default_value' => theme_get_setting('header_lite'),
+   '#description' => t('Check the box to change menu header style'), 
+ );
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  $form['footer_settings']['footer'] = array(
+   '#type' => 'details',
+   '#title' => t('Footer Settings'),
+   '#collapsible' => TRUE,
+   '#collapsed' => FALSE,
+ );
+
+  
+  $form ['footer_settings']['footer']['facebook'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('facebook'),
+    '#default_value' => theme_get_setting('facebook'),
+    '#description'   => t("Give URL of the social media."),
+  );
+
+
+  $form ['footer_settings']['footer']['twitter'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('twitter'),
+    '#default_value' => theme_get_setting('twitter'),
+    '#description'   => t("Give URL of the social media."),
+  );
+
+  $form ['footer_settings']['footer']['instagram'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('instagram'),
+    '#default_value' => theme_get_setting('instagram'),
+    '#description'   => t("Give URL of the social media."),
+  );
+
+  $form ['footer_settings']['footer']['youtube'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('youtube'),
+    '#default_value' => theme_get_setting('youtube'),
+    '#description'   => t("Give URL of the social media."),
+  );
+  $form ['footer_settings']['footer']['email'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('email'),
+    '#default_value' => theme_get_setting('email'),
+    '#description'   => t("Give URL of the social media."),
+  );
+  $form ['footer_settings']['footer']['address_title'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('address title'),
+    '#default_value' => theme_get_setting('address_title'),
+    '#description'   => t("Give URL of the social media."),
+  );
+  $form ['footer_settings']['footer']['address'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('address'),
+    '#default_value' => theme_get_setting('address'),
+    '#description'   => t("Give URL of the social media."),
+  );
+  $form ['footer_settings']['footer']['contact'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('contact'),
+    '#default_value' => theme_get_setting('contact'),
+    '#description'   => t("Give URL of the social media."),
+  );
+}
+
+
+function yg_corp_preprocess_page(&$variables) {
+  $variables['facebook'] = theme_get_setting('facebook');
+  $variables['twitter'] = theme_get_setting('twitter');
+  $variables['instagram'] = theme_get_setting('instagram');
+  $variables['youtube'] = theme_get_setting('youtube');
+  $variables['email'] = theme_get_setting('email');
+  $variables['address_title'] = theme_get_setting('address_title');
+  $variables['address'] = theme_get_setting('address');
+  $variables['contact'] = theme_get_setting('contact');
+  $variables['header_lite'] = theme_get_setting('header_lite');
+}
+function yg_corp_preprocess_views_view_unformatted(&$variables) {
+  $variables['is_front'] = Drupal::service('path.matcher')->isFrontPage();
+}
+
+function yg_corp_preprocess_menu(&$variables, $hook) {
+  if ($hook == 'main') { // We're doing that for main menu.
+    // Get the current path.
+    $current_path = \Drupal::request()->getRequestUri();
+    $items = $variables['items'];
+    foreach ($items as $key => $item) {
+      // If path is current_path, set active to li.
+      if ($item['url']->toString() == $current_path) {
+        // Add active link.
+        $variables['items'][$key]['attributes']['class'] = 'active';
+      }
+    }
+  }
+}
+
+function yg_corp_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Get Request Object.
+  $request = \Drupal::request();
+  // If there is HTTP Exception..
+  if ($exception = $request->attributes->get('exception')) {
+    // Get the status code.
+    $status_code = $exception->getStatusCode();
+    if (in_array($status_code, array(403, 404))) {
+      $suggestions[] = 'page__' . $status_code;
+    }
+  }
+}
+
+function yg_corp_theme(&$existing, $type, $theme, $path) {
+  $hooks = array();
+  $hooks['user_login_form'] = array(
+      'render element' => 'form',
+      'template' => 'user-login-form',
+  );
+  return $hooks;
+}

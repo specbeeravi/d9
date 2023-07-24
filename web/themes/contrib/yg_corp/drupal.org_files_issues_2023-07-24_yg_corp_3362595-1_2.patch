@@ -1,0 +1,13 @@
+diff --git a/assets/css/style.css b/assets/css/style.css
+index 6a6bbde..49f4f00 100644
+--- a/assets/css/style.css
++++ b/assets/css/style.css
+@@ -1095,3 +1095,7 @@ footer .copyright p a:hover {
+         margin: 0px;
+     }
+ }
++.menu-item--collapsed{
++    list-style-type: none;
++    list-style-image: none;
++}
+\ No newline at end of file

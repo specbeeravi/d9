@@ -1,0 +1,33 @@
+global-css: # Libraries needed in all pages.
+  css:
+    theme:
+      assets/css/animate.css: {}
+      assets/css/carousel.css: {}
+      assets/css/magnific-popup.css: {}
+      assets/css/style.css: {}
+      assets/css/custom.css: {}
+      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': { type: external, minified: true }
+      'https://fonts.googleapis.com/css?family=Lato:400,700': { type: external, minified: true }
+      'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css': { type: external, minified: true }
+      
+      
+global-js:     
+
+  js:
+    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js': { type: external, minified: true }
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js': { type: external, minified: true }
+    assets/js/wow.min.js: {}
+    assets/js/scroll.js: {}
+    assets/js/owl.carousel.min.js: {}
+    assets/js/particles.min.js: {}
+    assets/js/particles.activate.js: {}
+    assets/js/waypoints.js: {}
+    assets/js/counterup.min.js: {}
+    assets/js/script.js: {}
+
+
+  dependencies:
+
+    - core/drupalSetting
+    - core/jquery
+    - core/drupal

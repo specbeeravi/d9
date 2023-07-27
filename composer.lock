@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b90de7421be6b957486746acc39772f8",
+    "content-hash": "3aa556bd668a7043812741499b035093",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1453,6 +1453,56 @@
             }
         },
         {
+            "name": "drupal/bootstrap5",
+            "version": "3.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap5.git",
+                "reference": "3.0.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap5-3.0.8.zip",
+                "reference": "3.0.8",
+                "shasum": "e9968a03960900ce0e4ef5bd9a8694156f302774"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.8",
+                    "datestamp": "1685974134",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Roudakov (vladimiraus)",
+                    "homepage": "https://www.drupal.org/u/vladimiraus",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Master theme using Bootstrap 5: powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap5",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap5",
+                "issues": "https://www.drupal.org/project/issues/bootstrap5"
+            }
+        },
+        {
             "name": "drupal/bootstrap_business",
             "version": "1.0.0-beta4",
             "source": {
@@ -1515,6 +1565,78 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/bootstrap-business",
                 "issues": "https://www.drupal.org/project/issues/bootstrap_business"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_horizontal_tabs",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_horizontal_tabs.git",
+                "reference": "2.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_horizontal_tabs-2.0.4.zip",
+                "reference": "2.0.4",
+                "shasum": "626683823747c9c18f6304c3483bdacc8c820f5d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.4",
+                    "datestamp": "1685547974",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gravelpot",
+                    "homepage": "https://www.drupal.org/user/748208"
+                },
+                {
+                    "name": "Jeff Cardwell",
+                    "homepage": "https://www.drupal.org/user/2913129"
+                },
+                {
+                    "name": "lreynaga",
+                    "homepage": "https://www.drupal.org/user/3400232"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "mmarler",
+                    "homepage": "https://www.drupal.org/user/500192"
+                },
+                {
+                    "name": "ricksta",
+                    "homepage": "https://www.drupal.org/user/311042"
+                },
+                {
+                    "name": "texas_tater",
+                    "homepage": "https://www.drupal.org/user/753614"
+                },
+                {
+                    "name": "utexas",
+                    "homepage": "https://www.drupal.org/user/3716409"
+                }
+            ],
+            "description": "Provides a custom field type displayed as horizontal tabs",
+            "homepage": "https://www.drupal.org/project/bootstrap_horizontal_tabs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_horizontal_tabs"
             }
         },
         {

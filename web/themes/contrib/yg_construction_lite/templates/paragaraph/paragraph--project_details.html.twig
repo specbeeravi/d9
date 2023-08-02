@@ -1,0 +1,19 @@
+<!--project details-->	 
+	<p>
+		{% if content.field_date.0|render is not empty %}
+			<span>{{ content.field_date['#title'] }}:</span> {{ content.field_date.0 }} <br>
+		{% endif %} 
+		{% if content.field_body.0|render is not empty %}
+			<span>{{ content.field_body['#title']|render|striptags }}:</span> {{ content.field_body.0|render|striptags }} <br>
+		{% endif %} 
+		{% if content.field_sub_title.0|render is not empty %}
+			<span>{{ content.field_sub_title['#title'] }}:</span> {{ content.field_sub_title.0 }} <br>
+		{% endif %} 
+		{% if content.field_office.0|render is not empty %}
+			<span>{{ content.field_office['#title'] }}:</span> {{ content.field_office.0 }} <br>
+		{% endif %} 
+		{% if content.field_title.0|render is not empty %}
+			<span>{{ content.field_title['#title'] }}:</span> {{ content.field_title.0 }} <br>
+		{% endif %} 
+	</p>
+<!--project details-->   

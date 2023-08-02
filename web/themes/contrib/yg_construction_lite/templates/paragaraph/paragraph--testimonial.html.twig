@@ -1,0 +1,17 @@
+<!--Testmonial wrapper Start Here-->   
+<section class="testimonials_wrapper" style="background-image: url('{{ file_url(content.field_image['#items'].entity.uri.value) }}');">
+    <div class="overly_bg">
+        <div class="container">
+            <div class="row">
+                <div class="testimonial">
+                    <h2>{{ content.field_title.0 }}</h2>
+                    <div style="height:30px;"></div>
+                    <div class="one_item_carousel"> 
+                        {{ content.field_testimonial_items }}
+                    </div>
+                </div>    
+            </div>
+        </div>
+       </div> 
+ </section>
+<!--Testmonial wrapper End Here-->  

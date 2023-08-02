@@ -1,0 +1,35 @@
+<!-- service items -->
+{% if content.field_style[0]['#markup'] == 0 %}
+<div class="col-md-12   no-padding" style="background:url('{{ file_url(content.field_image['#items'].entity.uri.value) }}') no-repeat;">
+    <div class="col-md-6 col-sm-6 white_background no-padding col-md-offset-6  ">
+        <div class="service_block">
+            <div class="corner_section">
+                <div class="dots"></div>
+            </div>
+            <h2>{{ content.field_title.0 }}</h2>
+        	{{ content.field_body.0 }}								
+            <div class="corner_section2">
+                <div class="dots"></div>
+            </div>
+            </p>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="col-md-12  no-padding" style="background:url('{{ file_url(content.field_image['#items'].entity.uri.value) }}') right  no-repeat;">
+    <div class="col-md-6 col-sm-6 white_background no-padding">
+        <div class="service_block">
+            <div class="corner_section">
+                <div class="dots"></div>
+            </div>
+            <h2>{{ content.field_title.0 }}</h2>
+        	{{ content.field_body.0 }}									
+            <div class="corner_section2">
+                <div class="dots"></div>
+            </div>
+            </p>
+        </div>
+    </div>
+</div>
+{% endif %}
+<!-- service items end -->

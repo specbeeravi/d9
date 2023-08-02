@@ -1,0 +1,23 @@
+
+<!-- Address items -->
+    <div class="col-md-6 col-sm-6">
+        <h3>{{ content.field_title.0 }}</h3>
+        <p> {{ content.field_body.0|render|striptags }}
+            <br><br>                                          
+            {% if content.field_office.0|render is not empty %}
+                {{ content.field_office['#title'] }} — {{ content.field_office.0 }}
+            {% endif %}   
+            {% if content.field_sub_title.0|render is not empty %}
+                {{ content.field_sub_title['#title'] }} — {{ content.field_sub_title.0 }}
+            {% endif %}
+            <br>
+            <br>                                  
+            {% if content.field_email.0|render is not empty %}                      
+                {{ content.field_email['#title'] }}: {{ content.field_email.0 }}
+            {% endif %}
+            {% if content.field_url.0|render is not empty %}
+                {{ content.field_url['#title'] }}: {{ content.field_url[0]['#url']|render }}
+            {% endif %}                                                
+        </p>
+    </div>
+<!-- Address items end-->

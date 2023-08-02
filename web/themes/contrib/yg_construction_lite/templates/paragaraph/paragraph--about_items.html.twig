@@ -1,0 +1,8 @@
+<!-- about items -->
+  <div class="col-md-6 col-sm-6">
+        <h2>{{ content.field_title.0 }}</h2>
+        {{ content.field_body.0 }}
+        <div style="height:30px;"></div>
+        <img src="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt="{{ content.field_image['#items'].alt }}" title="{{ content.field_image['#items'].title }}">
+    </div>
+<!-- about items end -->

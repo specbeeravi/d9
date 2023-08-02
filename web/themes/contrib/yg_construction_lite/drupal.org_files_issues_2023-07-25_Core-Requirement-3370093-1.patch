@@ -1,0 +1,12 @@
+diff --git a/yg_construction_lite.info.yml b/yg_construction_lite.info.yml
+index a3d0078..374f39e 100755
+--- a/yg_construction_lite.info.yml
++++ b/yg_construction_lite.info.yml
+@@ -1,6 +1,7 @@
+ name : YG Construction Lite
+ description: 'YG Construction Lite is modern Drupal 8 theme developed to help you to create a stunning websites for Business.'
+ core: 8.x 
++core_version_requirement: ^8 || ^9 || ^10
+ type: theme 
+ base theme: classy
+ 

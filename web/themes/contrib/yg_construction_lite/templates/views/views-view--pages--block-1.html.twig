@@ -1,0 +1,63 @@
+{#
+ * @file
+ * Default theme implementation for main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A css-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   Javascript.
+ *
+ * @see template_preprocess_views_view()
+ *
+ * @ingroup themeable
+ */
+#}
+	
+    <div id="slider" class="sl-slider-wrapper slider_wrapper">      
+        <div class="sl-slider">
+		{% for result in view.result %}
+		   <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+		        <div class="sl-slide-inner">
+		          <div class="bg-img bg-img-1" style="background-image: url('{{ file_url(view.field.uri.value(view.result[loop.index-1])) }}');"><div class="overly_bg"></div></div>
+		            <h2>      
+		              <div class="slider_text">
+		                <h1>{{ view.field.title.value(view.result[loop.index-1]) }}</h1>
+		                  <blockquote> <p>{{ view.field.body.value(view.result[loop.index-1]) |striptags }}</p>
+		                    <div class="read_more_outer">
+		                      <a href="node/{{ view.field.nid.value(view.result[loop.index-1]) }}" class="read_more">Read More</a>
+		                    </div>
+		                  </blockquote>
+		              </div>  
+		            </h2>    
+		        </div>
+		    </div>
+		  {% endfor %}  
+      	</div> 
+      <!-- /sl-slider -->
+      <nav class="nav-arrows" id="nav-arrows">
+          <span class="nav-arrow-prev">Previous</span>
+          <span class="nav-arrow-next">Next</span>
+      </nav>
+
+
+  	</div><!-- /slider-wrapper -->
+

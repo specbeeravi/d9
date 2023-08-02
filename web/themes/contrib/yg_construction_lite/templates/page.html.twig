@@ -1,0 +1,144 @@
+
+<!--main container-->
+  <div id="main_container" class="main_container">
+  <!--header wrapper Start Here-->
+  <header class="header_wrapper">
+    <div class="header_top">
+        <div class="container">
+            <div class="row">
+                <div class="pull-left">
+                  {% if contact_number|render is not empty %}
+                    <a href="tel:{{ contact_number }}" class="top_menu"><i class="fa fa-phone"></i> Contact With us - {{ contact_number }}</a>
+                  {% endif %}
+                  {% if mail|render is not empty %}  
+                    <a href="mailto:{{ mail }}" class="top_menu"><i class="fa fa-inbox"></i> Email - {{ mail }}</a>
+                  {% endif %}  
+                </div>
+                <div class="pull-right">
+                    {% if facebook_url|render is not empty %}
+                      <a href="{{ facebook_url }}"><i class="fa fa-facebook"></i></a>
+                    {% endif %}
+                    {% if twitter_url|render is not empty %}
+                      <a href="{{ twitter_url }}"><i class="fa fa-twitter"></i></a>
+                    {% endif %}
+                    {% if linkedin_url|render is not empty %}
+                      <a href="{{ linkedin_url }}"><i class="fa fa-linkedin"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Navigation  Start Here-->
+      <div id="menu">
+        <div class="container">
+          <div class="row">
+            <div class="pull-left logo">{{ page.site_branding }}</div>
+              <div class="pull-right">
+                {{ page.primary_menu }}
+              </div> 
+            </div> 
+          </div>  
+      </div>
+    <!--Navigation  End Here-->
+           
+   <!--Page heading Start Here--> 
+  {% set banner = page.banner|render|striptags|trim is not empty %}
+  {% if banner %}
+    {{ page.banner }}
+  {% else %}
+    <section class="page_heading" style="background-image:url({{ bg_image_url }});">
+      <div class="overly_bg">
+          <div class="container">
+              <div class="row">
+                  <h2 class="heading_title">{{ page['#title'] }}</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+  {% endif %}  
+    <!--Page heading End Here-->
+      
+  </header>
+  <!--header wrapper End Here-->   
+  {{ page.tabs }}
+
+  {{ page.content }}
+
+             
+    <!-- Footer Wrapper Start Here-->  
+     <footer class="footer_wrapper">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <h2>
+                {% if about_us_title|render is not empty %}{{ about_us_title }}{% endif %}
+                </h2>
+                  <p>{% if about_desc|render is not empty %}{{ about_desc }}{% endif %}</p>
+              </div>
+              
+              <div class="col-md-4 col-sm-4">
+                <h2>{% if title|render is not empty %}{{ title }}{% endif %}</h2>
+                  <p>{% if info_desc|render is not empty %}{{ info_desc }}{% endif %}</p>
+                  <p>
+                    {% if contact_number|render is not empty %}
+                    <a href="tel:{{ contact_number }}"><span>Tel:  </span>{{ contact_number }}</a>
+                    {% endif %}<br>
+                    {% if mail|render is not empty %}
+                      <a href="mailto:{{ mail }}"><span> Email:  </span>{{ mail }}</a>
+                    {% endif %}<br>
+                    {% if working_hours|render is not empty %}
+                      <span> Working Hours: </span> {{ working_hours }}
+                    {% endif %}  
+                  </p>
+              </div>
+
+              <div class="col-md-4 col-sm-4">
+                <h2>
+                {% if social_title|render is not empty %}{{ social_title }}{% endif %}
+                </h2>
+                  <ul class="social-icons">
+                    {% if twitter_url|render is not empty %}
+                      <li><a href="{{ twitter_url }}"><i class="fa fa-twitter"></i></a></li>
+                    {% endif %}
+                    {% if facebook_url|render is not empty %}
+                      <li><a href="{{ facebook_url }}"><i class="fa fa-facebook"></i></a></li>
+                    {% endif %}
+                    {% if linkedin_url|render is not empty %}
+                      <li><a href="{{ linkedin_url }}"><i class="fa fa-linkedin"></i></a></li>
+                    {% endif %}
+                    {% if youtube_url|render is not empty %}
+                      <li><a href="{{ youtube_url }}"><i class="fa fa-youtube"></i></a></li>
+                    {% endif %}
+                    {% if google_plus_url|render is not empty %}
+                      <li><a href="{{ google_plus_url }}"><i class="fa fa-google-plus"></i></a></li>
+                    {% endif %}
+                  </ul>
+              </div>
+              
+              
+          </div>
+        </div>
+    </footer>
+              
+    <div class="footer_bottom">
+      <div class="container">
+        <p class="color-gray">&copy; 2018. <a href="#">YG Construction Lite</a> All Rights Reserved. <br> Design by <a href="https://www.navthemes.com/free-html-templates/" target="_blank">NavThemes</a> Theme By <a href="https://www.drupaldeveloperstudio.com" target="_blank">Drupal Developers Studio</a>. A Division of <a href="www.youngglobes.com" target="_blank">Young Globes</a>
+        <a class="cd-top" href="#0"><img src="/themes/yg_construction_lite/assets/img/top_img.jpg"></a></p> 
+        </div>  
+    </div>
+  <!-- Footer Wrapper End Here-->  
+              
+              
+  </div>           
+  <!--main container end-->
+ 
+  
+   <!--PRE LOADER HERE-->
+  <div id="pre-loader">
+      <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+  </div> 
+  
+    

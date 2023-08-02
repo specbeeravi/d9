@@ -1,0 +1,13 @@
+diff --git a/src/Plugin/Field/FieldFormatter/BootstrapHorizontalTabs.php b/src/Plugin/Field/FieldFormatter/BootstrapHorizontalTabs.php
+index 5f798cf..5e6c002 100644
+--- a/src/Plugin/Field/FieldFormatter/BootstrapHorizontalTabs.php
++++ b/src/Plugin/Field/FieldFormatter/BootstrapHorizontalTabs.php
+@@ -168,7 +168,7 @@ class BootstrapHorizontalTabs extends FormatterBase {
+           'class' => [
+             'nav-link',
+           ],
+-          'data-toggle' => 'tab',
++          'data-bs-toggle' => 'tab',
+           'href' => '#' . $unique_item_id,
+           'id' => $unique_item_id . '-tab',
+           'role' => 'tab',

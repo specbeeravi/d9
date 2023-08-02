@@ -29,7 +29,3 @@ libraries:
 
   - yg_corp/global-css 
   - yg_corp/global-js
-# Information added by Drupal.org packaging script on 2020-08-24
-version: '2.0.0'
-project: 'yg_corp'
-datestamp: 1598264834

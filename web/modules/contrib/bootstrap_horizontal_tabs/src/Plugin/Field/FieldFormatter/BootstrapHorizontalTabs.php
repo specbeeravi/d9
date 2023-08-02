@@ -168,7 +168,7 @@ class BootstrapHorizontalTabs extends FormatterBase {
           'class' => [
             'nav-link',
           ],
-          'data-toggle' => 'tab',
+          'data-bs-toggle' => 'tab',
           'href' => '#' . $unique_item_id,
           'id' => $unique_item_id . '-tab',
           'role' => 'tab',

@@ -1,0 +1,24 @@
+diff --git a/assets/css/style.css b/assets/css/style.css
+index 6a6bbde..d7f8446 100644
+--- a/assets/css/style.css
++++ b/assets/css/style.css
+@@ -886,6 +886,9 @@ footer p {
+ footer ul{
+     padding: 0px;
+ }
++footer ul li.menu-item--collapsed {
++    list-style: none;
++}
+ .footer-top{
+     padding: 50px 0px 50px;
+ }
+@@ -916,6 +919,9 @@ footer .footer-top li a {
+     color: #fdfdfd;
+     line-height: 30px;
+ }
++footer .footer-top li a.is-active {
++    color: #1879da;
++}
+ ul.social li {
+     display: inline-block;
+ }
